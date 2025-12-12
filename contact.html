@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css">
+  <title>Thechoice</title>
+
+</head>
+<body>
+ <header class="site-header">
+  <!-- Hamburger button -->
+  <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+    ☰
+  </button>
+
+  <nav class="nav" id="main-nav">
+    <a href="index.html">TheChoice</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="booking.html">Booking</a>
+    <a href="style.html">Style</a>
+    <a href="travel.html">Travel</a>
+  </nav>
+</header>
+
+  <section id="contact" class="container contact">
+  <h3>Contact us for more information</h3>
+  <form action="#"method]="POST">
+  <div class="field">
+  <label for="fname">Enter your names:</label>
+  <input type="text" id="names" name="names" value=""><br>
+  </div>
+  <div class="field">
+  <label for="email">Email</label>
+  <input type="email" name="email"id="email"required>
+  </div><br>
+  <div class="field">
+   <label for="message">Leave message</label>
+   <textarea id="message" name="message" rows="4" placeholder="more help leave message or comment"></textarea>
+  </div>
+  <button class="btn" type="submit">Submit</button>
+</form>
+  </section>
+   <footer class="container site-footer" role="contentinfo">
+      <small>&copy; <span id="year"></span>Thechoice. All rights reserved.</small>
+    </footer>
+    <script src="main.js"></script>  <!-- or js/main.js if you put it in a folder -->
+</body>
+</html>
+
+

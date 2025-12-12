@@ -1,0 +1,266 @@
+html,body{
+    margin:0;
+    padding:0;
+    background:var(--bg);
+    color:var(--ink);
+    font:16px/1.6 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+.container{
+    
+    margin:0 auto;
+    padding:16px;
+}
+.site-header{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:12px 16px;
+    position:sticky;
+    top:0;z-index:50;
+    background:#edeaea;
+    border-bottom:1px solid var(--line);
+    flex-direction: column;
+    align-items: center;
+}
+.nav{
+    display:flex;
+    gap:12px;
+    flex:1;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.nav a{
+    padding:6px 10px;
+    border-radius:10px;
+    color:#1f2937;
+    font-weight:500;
+   }
+.nav a:hover{
+    background:#f3f4f6;
+}
+
+h1{
+  margin-left: 250px;
+  color: rgb(48, 48, 51);
+  padding: 8px;
+  text-shadow: 5px 5px 6px rgb(52, 48, 48);
+   
+}
+img {
+   width: 35em;
+   padding: 0px;
+   border: 1px solid gray;
+   margin: 5px 10px;
+}
+img.floatright {
+   float: right;
+   margin-left: 3em;
+   width: 500px;
+   margin-top: 89px;
+}
+img.floatleft {
+   float: left;
+   
+}
+.nofloats {
+   clear: both;
+}
+form{
+   display: grid;
+   gap: var(--gap);
+   margin-right: 60em;
+   margin-left: 5em;
+   margin-top: 4em;
+}
+.field{
+   display: grid;
+   gap: .35rem;
+}
+label{
+   font-size: .95rem;
+   color: var(--muted);
+}
+input,textarea{
+   font:inherit;
+   color:inherit;
+   background: #c8c8c8;
+   border: 1px solid rgb(255, 255r, 255l, .14);
+   border-radius: 0px; padding: .7rem .8rem;
+   flex: 1;
+   padding: 0.5rem;
+   font-size: 16px;
+   border: 1px solid hsl(0, 0%, 99%);
+   border-radius: 4px;
+}
+input[type="email"]:focus, input[type="text"]:focus, textarea:focus{
+   outline: none;
+   border-color:var(--accent);
+   box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 15%, transparent);
+}
+p{
+   margin-left: 10em;
+   margin-top: 4em;
+   font-size: 20px;
+}
+button{
+   margin-right: auto;
+   margin-top: 1em;
+   color: #2200ff;
+   font-size:large;
+}
+.site-footer{
+   text-align: center;
+   color:var(--muted);
+   font-size:20px;
+   
+}
+footer{
+   margin: 10px;
+   background-color: darkgray;
+   margin-top: 1em;
+   height: 250px;
+}
+.booking-form{
+   max-width: 600px;
+   margin: 1rem 0 1rem 2rem;
+}
+.form-data{
+   display: flex;
+   align-items: left;
+   margin-bottom: 1rem;
+   font-size: 20px;
+}
+.form-data label{
+   flex: 0 0 150px;
+   margin-right: 1rem;
+}
+
+
+.hotel-container, .style-container{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+}
+.hotel-card, .style-card{
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   padding: 16px;
+   width: 320px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.hotel-image img, .style-image img{
+   width: 300px;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 8px;
+}
+.hotel-button, .style-button{
+   display: inline-block;
+   margin-top: 10px;
+   padding: 10px 15px;
+   background-color: #28a745;
+   color: white;
+   text-align: center;
+   border-radius: 5px;
+   text-decoration: none;
+}
+.hotel-button:hover, .style-button:hover{
+   background-color: #005663;
+}
+
+/* default: hide hamburger on desktop */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+/* --- MOBILE STYLES --- */
+@media (max-width: 768px) {
+   .site-header {
+    justify-content: space-between;
+  }
+ 
+  .nav-toggle {
+    display: block;         
+  }
+
+  .nav {
+    display: none;           
+    flex-direction: column;
+    width: 100%;
+    background: #edeaea;
+    padding: 0.5rem 1rem 1rem;
+    gap: 0.5rem;
+  }
+
+  .nav.nav-open {
+    display: flex;          
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  p {
+    margin: 1rem;            
+    font-size: 1rem;
+  }
+
+
+  /* Booking form full-width */
+  .booking-form,
+  form {
+    margin: 1rem;
+    max-width: 100%;
+  }
+
+  .form-data {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-data label {
+    flex: none;
+    margin-right: 0;
+    margin-bottom: 0.3rem;
+  }
+
+  .form-data input,
+  .form-data select,
+  .form-data textarea {
+    width: 98%;
+  }
+
+  /* Cards stack nicely */
+  .hotel-card,
+  .style-card {
+    width: 100%;
+  }
+
+  .hotel-image img,
+  .style-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer: no fixed height on mobile */
+  footer {
+    height: auto;
+    padding: 1rem;
+  }
+}
+
+
+
+
+
+

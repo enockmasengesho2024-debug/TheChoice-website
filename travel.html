@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css">
+  <title>Thechoice</title>
+
+</head>
+<body>
+  <header class="site-header">
+  <!-- Hamburger button -->
+  <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+    ☰
+  </button>
+
+  <nav class="nav" id="main-nav">
+    <a href="index.html">TheChoice</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="booking.html">Booking</a>
+    <a href="style.html">Style</a>
+    <a href="travel.html">Travel</a>
+  </nav>
+</header>
+
+  <main>
+    <h1>Explore Our Offers</h1>
+    <p>Discover exclusive travel packages, stylish apparel, and cutting-edge technology tailored to your needs. 
+      Whether you're planning a luxurious getaway or looking for the latest tech gadgets, we've got you covered.</p>
+      <sectiion class="hotel-container">
+       <div class="hotel-card">
+    <div class="hotel-image">
+      <img src="photos/roberto-nickson-emqnSQwQQDo-unsplash (1).jpg" alt="Hotel 1">
+    </div>
+    <div class="hotel-details">
+      <div class="hotel-title">Beachside Paradise</div>
+      <div class="hotel-description">Oceanfront suites with private balconies.</div>
+      <div class="hotel-price">$349/night</div>
+      <a href="booking.html"
+   class="hotel-button"
+   onclick="showBookingMessage('Beachside Paradise', '$349')">
+  Book Now
+</a>
+
+    </div>
+  </div>
+    <div class="hotel-card">
+    <div class="hotel-image">
+      <img src="photos/valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg" alt="Hotel 2">
+    </div>
+    <div class="hotel-details">
+      <div class="hotel-title">Mountain Retreat</div>
+      <div class="hotel-description">Cozy cabins with stunning mountain views.</div>
+      <div class="hotel-price">$279/night</div>
+      <a href="booking.html"
+   class="hotel-button"
+   onclick="showBookingMessage('Mountain Retreat', '$279')">
+  Book Now
+</a>
+
+    </div>
+        </div>
+        <div class="hotel-card">
+    <div class="hotel-image">
+      <img src="photos/roberto-nickson-MA82mPIZeGI-unsplash.jpg" alt="Hotel 3">
+    </div>
+    <div class="hotel-details">
+      <div class="hotel-title">City Lights Hotel</div>
+      <div class="hotel-description">Modern rooms in the heart of downtown.</div>
+      <div class="hotel-price">$199/night</div>
+      <a href="booking.html"
+   class="hotel-button"
+   onclick="showBookingMessage('City Lights Hotel', '$199')">
+  Book Now
+</a>
+
+      
+
+    </div>
+        </div>
+      </section>
+  </main>
+    <footer class="container site-footer" role="contentinfo">
+      <small>&copy; <span id="year"></span>Thechoice. All rights reserved.</small>
+    </footer>
+    <script src="main.js"></script>  <!-- or js/main.js if you put it in a folder -->
+</body>
+</html>
