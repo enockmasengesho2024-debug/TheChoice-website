@@ -5,12 +5,10 @@
 
 Thechoice is a fake business website that combines curated travel packages, Styles, and a simple online booking experience. This project demonstrates semantic HTML, external CSS, basic JavaScript, and a responsive layout.
 
-
-
 ## GitHub & Live Site
 
-- **Repo:** `https://github.com/USERNAME/thechoice`  
-- **Live Site (GitHub Pages):** `https://USERNAME.github.io/thechoice/` 
+- **Repo:** (https://github.com/enockmasengesho2024-debug/TheChoice-website.git)  
+- **Live Site (GitHub Pages):** (https://github.com/enockmasengesho2024-debug/TheChoice-website)` 
 
 
 
@@ -90,7 +88,16 @@ Shows clothing/outfit ideas using style cards.
   - Short description  
   - Optional button linking to more details or a related page
 
----
+
+## local setup
+
+- clone or  download the repository:
+
+- git clone `https://github.com/enockmasengesho2024-debug/TheChoice-website`
+
+## open the project folder
+ - Open home.html or index.html in your browser (double-click or drag into a browser window).
+ - GitHub pages, In the GitHub repo settings, enable GitHub Pages and set the source to the main branch and /root. and visit `https://github.com/enockmasengesho2024-debug/TheChoice-website`
 
 ## JavaScript Features
 
