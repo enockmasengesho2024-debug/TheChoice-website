@@ -1,73 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="styles.css">
-  <title>Thechoice</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thechoice – Travel · Style · Booking</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-  <!-- Hamburger button -->
-  <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
-    ☰
-  </button>
+    
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+      ☰
+    </button>
 
-  <nav class="nav" id="main-nav">
-    <a href="index.html">TheChoice</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact Us</a>
-    <a href="booking.html">Booking</a>
-    <a href="style.html">Style</a>
-    <a href="travel.html">Travel</a>
-  </nav>
-</header>
+    <nav class="nav" id="main-nav">
+      <a href="index.html">TheChoice</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="booking.html">Booking</a>
+      <a href="style.html">Style</a>
+      <a href="travel.html">Travel</a>
+    </nav>
+  </header>
 
-  <main>
-  <h1>your choice is your happy</h1>
-  <div> 
-  <img src="photos/pexels-n-voitkevich-6214452.jpg" alt="Image" class="floatleft">
-  
+  <main class="container">
+    
+    <section class="hero-banner">
+  <img class="hero-bg" src="photos/ish-consul-i56w4ah3wAY-unsplash.jpg" alt="Luxury travel destination" />
 
-           <strong>The Choice: Your Marketing Hub</strong><br>
-The Choice is more than just a website; it serves as a comprehensive marketing hub designed to help brands distinguish themselves and connect effectively with their target audiences.
-Global Publishing and Creative Storytelling
-We specialize in publishing a wide variety of items for clients across the globe. Through innovative storytelling, we craft compelling narratives that highlight each brand’s unique voice and message.
-Data-Driven Solutions
-Our approach is rooted in data-driven strategies, ensuring that every marketing effort is tailored to achieve optimal results for our clients.
-Delivering Impactful Marketing
-Whether the objective is to build brand awareness, enhance customer engagement, or drive measurable results, The Choice consistently delivers marketing solutions that truly resonate.<br>
-       
-        <strong>Our goal is clear:</strong><br> to equip businesses with the tools and direction they need to make informed decisions and succeed in today’s competitive market.
-  </div>
+  <div class="hero-overlay">
+    <h1>Plan the Perfect Getaway with Thechoice</h1>
+    <p>
+      Thechoice brings together curated travel stays, modern style, and easy online booking.
+      Whether you're dreaming of a beach escape, a city break, or a cozy cabin in the mountains,
+      we help you choose with confidence.
+    </p>
 
-      <div class="nofloats">
-  <img src="photos/pexels-karolina-grabowska-5632397.jpg" alt="Image" class= "floatright">
-      
-            Discover The Choice, your go to destination for smart insights, powerful
-        strategies, and tools that help you make confident decisions.
-        Whether you’re a business looking to grow or an individual seeking fresh
-        ideas, The Choice brings you the guidance and resources you need to
-        succeed.
-        Don’t just wonder what’s possible explore it with us. Visit <a href="https://www.shopify.com/"> The Choice</a> today and see why the right choice makes all the difference.
-</div>
-        
- <div>
-   <section class="container media">
-    <p>Wacht the short video</p>
-    <video controls width="500" autoplay muted>
-  <source src="5889062-uhd_3840_2160_25fps.mp4">
-</video>
-   </section>
-   
+    <div class="hero-actions">
+      <a href="booking.html" class="btn-primary">Start a Booking</a>
+      <a href="travel.html" class="btn-secondary">Explore Trips</a>
     </div>
-    </main>
-    <footer class="container site-footer" role="contentinfo">
-      <small>&copy; <span id="year"></span>Thechoice. All rights reserved.</small>
-    </footer>
-    <script src="main.js"></script>  <!-- or js/main.js if you put it in a folder -->
-</body>
+  </div>
+</section>
 
+    
+    <section class="home-featured">
+  <h2>Featured Picks This Week</h2>
+  <div class="home-featured-grid">
+
+    <article class="home-featured-card card-beach">
+      <h3>Beachside Paradise</h3>
+      <p>Oceanfront suites with private balconies and sunrise views.</p>
+      <p class="price">$349/night</p>
+      <a href="travel.html" class="btn-secondary">View Details</a>
+    </article>
+
+    <article class="home-featured-card card-mountain">
+      <h3>Mountain Retreat</h3>
+      <p>Cozy cabins with stunning mountain views and crisp morning air.</p>
+      <p class="price">$279/night</p>
+      <a href="travel.html" class="btn-secondary">View Details</a>
+    </article>
+
+    <article class="home-featured-card card-style">
+      <h3>Athleisure Essentials</h3>
+      <p>Comfortable, stylish outfits that move with you from airport to adventure.</p>
+      <a href="style.html" class="btn-secondary">See the Collection</a>
+    </article>
+
+  </div>
+</section> 
+  </main>
+  <footer class="container site-footer" role="contentinfo">
+    <small>&copy; <span id="year"></span> Thechoice. All rights reserved.</small>
+  </footer>
+  <script src="main.js"></script>
+</body>
 </html>

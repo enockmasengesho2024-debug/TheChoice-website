@@ -5,15 +5,15 @@ function showBookingMessage(hotelName, pricePerNight) {
     " at " + pricePerNight + " per night.\n\n" +
     "We’ll take you to the booking form next!";
 
-  // Popup for the user
+  // Popup for the user screen
   alert(message);
 
-  // Log for you (developer) in the console
+
   console.log(message);
 }
 function toggleNav() {
   const nav = document.getElementById("main-nav");
   nav.classList.toggle("nav-open");
 }
-// Set the current year in the footer
-document.getElementById("year").textContent = new Date().getFullYear();
+
+
