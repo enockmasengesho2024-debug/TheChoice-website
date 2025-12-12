@@ -91,7 +91,7 @@ a{
   flex-wrap: wrap;
 }
 
-/* mobile */
+
 @media (max-width: 768px) {
   .hero-banner {
     height: 60vh;
@@ -134,7 +134,7 @@ a{
 .btn-secondary:hover {
   background-color: #f3f4f6;
 }
-/* Highlights section */
+
 .home-highlights {
   margin-top: 3rem;
 }
@@ -162,7 +162,7 @@ a{
   margin-top: 0.5rem;
   color: #2563eb;
 }
-/* Featured section */
+
 .home-featured {
   margin-top: 3rem;
   margin-bottom: 2rem;
@@ -349,7 +349,7 @@ footer{
   font-size: 1.8rem;
   cursor: pointer;
 }
-/* - MOBILE STYLES - */
+
 @media (max-width: 768px) {
    .site-header {
     justify-content: space-between;
@@ -378,7 +378,7 @@ footer{
     margin: 1rem;            
     font-size: 1rem;
   }
-  /* Booking form  */
+  
   .booking-form,
   form {
     margin: 1rem;
